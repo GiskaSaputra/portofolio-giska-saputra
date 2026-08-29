@@ -149,7 +149,7 @@ async function seed() {
         _type: 'skill',
         name: s.name,
         description: s.desc || '',
-        emoji: s.emoji || '',
+        emoji: (s as any).emoji || '',
         type: 'soft',
         order: skillOrder++,
       });
@@ -169,7 +169,7 @@ async function seed() {
         gradient: proj.gradient,
         size: proj.size,
         tags: proj.tags,
-        badge: proj.badge || undefined,
+        badge: (proj as any).badge || undefined,
         order: i,
       });
     }
