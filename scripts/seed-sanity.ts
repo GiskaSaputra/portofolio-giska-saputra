@@ -127,6 +127,8 @@ async function seed() {
         org: exp.org,
         period: exp.period,
         type: exp.type || 'organization',
+        workType: (exp as any).workType || undefined,
+        employmentType: (exp as any).employmentType || undefined,
         points: exp.points,
         order: expOrder--,
       });

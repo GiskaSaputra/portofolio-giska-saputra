@@ -22,13 +22,41 @@ export const experienceType = defineType({
     }),
     defineField({
       name: 'type',
-      title: 'Type',
+      title: 'Category',
       type: 'string',
       options: {
         list: [
-          { title: 'Organization', value: 'organization' },
+          { title: 'Work', value: 'work' },
           { title: 'Internship', value: 'internship' },
+          { title: 'Organization', value: 'organization' },
           { title: 'Project Based', value: 'project-based' },
+        ],
+      },
+    }),
+    defineField({
+      name: 'workType',
+      title: 'Work Type',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'Remote', value: 'remote' },
+          { title: 'Onsite', value: 'onsite' },
+          { title: 'Hybrid', value: 'hybrid' },
+        ],
+      },
+    }),
+    defineField({
+      name: 'employmentType',
+      title: 'Employment Type',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'Full-time', value: 'full-time' },
+          { title: 'Part-time', value: 'part-time' },
+          { title: 'Freelance', value: 'freelance' },
+          { title: 'Contract', value: 'contract' },
+          { title: 'Internship', value: 'internship' },
+          { title: 'Volunteer', value: 'volunteer' },
         ],
       },
     }),
@@ -48,7 +76,7 @@ export const experienceType = defineType({
     {
       title: 'Manual Order',
       name: 'manualOrder',
-      by: [{ field: 'order', direction: 'asc' }],
+      by: [{ field: 'order', direction: 'desc' }],
     },
   ],
 })

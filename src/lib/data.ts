@@ -72,6 +72,8 @@ export const experience = [
     org: "PT. Teknologi Server Indonesia | Internship",
     period: "August 2026 - Present",
     type: "internship" as const,
+    workType: "onsite",
+    employmentType: "internship",
     points: [
       "Spearheaded the modernization of a legacy native PHP system by migrating the entire codebase to the latest Laravel framework.",
       "Restructured the application into a robust MVC architecture and seamlessly integrated responsive front-end interfaces."
@@ -83,6 +85,8 @@ export const experience = [
     org: "Himatris - JKB FEST | Project Based",
     period: "January 2026 - May 2026",
     type: "project-based" as const,
+    workType: "hybrid",
+    employmentType: "volunteer",
     points: [
       "Spearheaded a technical team of 7 in architecting and developing the competition's operational web system using Laravel and MySQL.",
       "Guaranteed 100% platform uptime and data integrity for 20+ concurrent active users during peak competition rounds."
@@ -94,6 +98,8 @@ export const experience = [
     org: "Himatris - JKB FEST | Project Based",
     period: "January 2026 - May 2026",
     type: "project-based" as const,
+    workType: "hybrid",
+    employmentType: "volunteer",
     points: [
       "Translated over 30 pages of high-fidelity prototype designs (Figma) into an interactive and responsive website interface."
     ],
@@ -104,6 +110,8 @@ export const experience = [
     org: "Himatris - JKB Learning Center | Organization",
     period: "January 2026 - May 2026",
     type: "organization" as const,
+    workType: "onsite",
+    employmentType: "volunteer",
     points: [
       "Intensively mentored 32 class participants on UI/UX fundamentals, user research, and wireframing using Figma.",
       "Assisted participants in producing functional digital application prototypes, achieving an 80% graduation rate."
@@ -115,28 +123,34 @@ export const experience = [
     org: "Google Developers Groups | Internship",
     period: "December 2025 - June 2026",
     type: "internship" as const,
+    workType: "remote",
+    employmentType: "volunteer",
     points: [
       "Designed 20+ solution-based application prototypes for various community projects using Figma.",
       "Collaborated with 5 developers, reducing design revisions during the coding phase by 30%."
     ],
   },
   {
-    number: "05",
+    number: "06",
     role: "Research Assistant",
     org: "Politeknik Negeri Cilacap | Project Based",
     period: "October 2025 - December 2025",
     type: "project-based" as const,
+    workType: "onsite",
+    employmentType: "part-time",
     points: [
       "Conducted user research by interviewing 20 stakeholders to identify pain points related to mental health.",
       "Designed comprehensive user flow and interface for an AI mental health detection system using Figma."
     ],
   },
   {
-    number: "06",
+    number: "07",
     role: "Coordinator of Kominfo Division",
     org: "PROTIC | Organization",
     period: "July 2025 - Present",
     type: "organization" as const,
+    workType: "onsite",
+    employmentType: "volunteer",
     points: [
       "Led a team of 7 staff members in producing visuals, publication strategies, and managing social media.",
       "Increased the organization's social media engagement rate by 85% through regular publications."

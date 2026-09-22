@@ -49,9 +49,9 @@ export async function getPortfolioData() {
         ? experience.filter((e: any) => e.type === "internship")
         : staticData.experience.filter((e: any) => e.type === "internship"),
 
-      projectBased: experience.length > 0 
-        ? experience.filter((e: any) => e.type === "project-based")
-        : staticData.experience.filter((e: any) => e.type === "project-based"),
+      work: experience.length > 0 
+        ? experience.filter((e: any) => e.type === "work" || e.type === "project-based")
+        : staticData.experience.filter((e: any) => e.type === "work" || e.type === "project-based"),
         
       projects: projects.length > 0 ? projects.map((p: any) => ({
         ...p,
