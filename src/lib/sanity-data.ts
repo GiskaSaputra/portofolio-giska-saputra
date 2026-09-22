@@ -18,6 +18,7 @@ export async function getPortfolioData() {
       "pdfUrl": pdfFile.asset->url
     }`);
     const tools = await client.fetch(`*[_type == "tool"] | order(order asc)`);
+    const aiTools = await client.fetch(`*[_type == "aiTool"] | order(order asc)`);
 
     // Helper to resolve Sanity image URLs or fallback to static string
     const resolveImage = (sanityImg: any, fallbackStr: string) => {
@@ -72,6 +73,11 @@ export async function getPortfolioData() {
         ...t,
         img: resolveImage(t.img, ""),
       })) : staticData.listTools,
+
+      aiTools: aiTools.length > 0 ? aiTools.map((t: any) => ({
+        ...t,
+        img: resolveImage(t.img, ""),
+      })) : staticData.listAiTools,
     };
   } catch (error) {
     console.error("Error fetching Sanity data, falling back to static data:", error);

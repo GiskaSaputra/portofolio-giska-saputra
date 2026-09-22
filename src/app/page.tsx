@@ -8,6 +8,7 @@ import { Experience } from "@/components/sections/experience";
 import { Project } from "@/components/sections/project";
 import { Skills } from "@/components/sections/skills";
 import { Tools } from "@/components/sections/tools";
+import { AITools } from "@/components/sections/ai-tools";
 import { Certificates } from "@/components/sections/certificates";
 import { PortfolioProvider } from "@/components/providers/portfolio-provider";
 import { getPortfolioData } from "@/lib/sanity-data";
@@ -29,6 +30,7 @@ export default async function Home() {
         <Project />
         <Skills />
         <Tools />
+        <AITools />
         <Certificates />
         <Footer />
       </main>

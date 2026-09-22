@@ -12,6 +12,7 @@ import { projectType } from './project'
 import { skillType } from './skill'
 import { certificateType } from './certificate'
 import { toolType } from './tool'
+import { aiToolType } from './aiTool'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
@@ -23,5 +24,6 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     skillType,
     certificateType,
     toolType,
+    aiToolType,
   ],
 }

@@ -377,3 +377,15 @@ export const listTools = [
   { id: 13, nama: "CodeIgniter 4", ket: "PHP Framework", img: "/images/tools/codeigniter.svg" },
   { id: 14, nama: "PHP", ket: "Language", img: "/images/tools/php.svg" },
 ];
+
+export const listAiTools = [
+  { id: 1, nama: "ChatGPT", ket: "OpenAI", img: "/images/ai-tools/chatgpt.svg" },
+  { id: 2, nama: "Claude", ket: "Anthropic", img: "/images/ai-tools/claude.svg" },
+  { id: 3, nama: "Gemini", ket: "Google", img: "/images/ai-tools/gemini.svg" },
+  { id: 4, nama: "Claude Code", ket: "Anthropic CLI", img: "/images/ai-tools/claudecode.svg" },
+  { id: 5, nama: "OpenCode", ket: "AI Coding", img: "/images/ai-tools/opencode.svg" },
+  { id: 6, nama: "Antigravity", ket: "Google DeepMind", img: "/images/ai-tools/antigravity.svg" },
+  { id: 7, nama: "Cursor", ket: "AI Code Editor", img: "/images/ai-tools/cursor.svg" },
+  { id: 8, nama: "9router", ket: "AI Router", img: "/images/ai-tools/9router.svg" },
+  { id: 9, nama: "NotebookLM", ket: "Google", img: "/images/ai-tools/notebooklm.svg" },
+];

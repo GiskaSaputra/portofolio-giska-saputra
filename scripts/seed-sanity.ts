@@ -12,6 +12,7 @@ import {
   skills,
   listSertifikat,
   listTools,
+  listAiTools,
 } from '../src/lib/data';
 import dotenv from 'dotenv';
 
@@ -196,6 +197,19 @@ async function seed() {
       const img = await uploadImage(t.img);
       await client.create({
         _type: 'tool',
+        nama: t.nama,
+        ket: t.ket,
+        img: img,
+        order: i,
+      });
+    }
+
+    console.log('Seeding AI tools...');
+    for (let i = 0; i < listAiTools.length; i++) {
+      const t = listAiTools[i];
+      const img = await uploadImage(t.img);
+      await client.create({
+        _type: 'aiTool',
         nama: t.nama,
         ket: t.ket,
         img: img,
