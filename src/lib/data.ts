@@ -376,6 +376,7 @@ export const listTools = [
   { id: 12, nama: "Laravel", ket: "PHP Framework", img: "/images/tools/laravel.svg" },
   { id: 13, nama: "CodeIgniter 4", ket: "PHP Framework", img: "/images/tools/codeigniter.svg" },
   { id: 14, nama: "PHP", ket: "Language", img: "/images/tools/php.svg" },
+  { id: 15, nama: "Docker", ket: "Containerization", img: "/images/tools/docker.svg" },
 ];
 
 export const listAiTools = [
